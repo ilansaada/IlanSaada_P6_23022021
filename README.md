@@ -6,11 +6,9 @@ La première version de l'application, devra être une « galerie de sauces » p
 
 
 
-## Instalation du projet ##
+## Installation du projet ##
 
-
-- allumer le backend avec la commande nodemon server au niveau du dossier backend 
-
-- allumer le frontend avec la commande npm start au niveau du dossier frontend 
+- clonner le projet 
+- démarrage du serveur avec la commande npm start 
 
 
