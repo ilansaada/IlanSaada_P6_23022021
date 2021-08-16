@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const path = require('path');
 /*----------------------------------importation du routeur-----------------------------*/
@@ -15,7 +14,7 @@ mongoose.connect("mongodb+srv://IlanSaada:IlanSaada24@cluster0.byflg.mongodb.net
 .catch(() => console.log("Connexion à MongoDB échouée !"));
 
 const app = express();
-/*-------------------------------------------CORS------------------------------------------*/
+/*-------------------------------------------Déf des CORS lien backend et frontend ------------------------------------------*/
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -30,7 +29,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(bodyParser.json());
+app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
 app.use('/images', express.static(path.join(__dirname, 'images')));

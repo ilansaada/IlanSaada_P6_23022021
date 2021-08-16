@@ -11,8 +11,7 @@ On Windows, these installations require to use PowerShell in administrator mode.
 
 The, clone this repo and run `npm install`.
 
-
-## Usage ##
+## USAGE ##
 
 Run `npm start`. This should both run the local server and launch your browser.
 
